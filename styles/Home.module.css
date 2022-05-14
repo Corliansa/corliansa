@@ -107,6 +107,13 @@
 	margin-left: 0.5rem;
 }
 
+.repos {
+	display: flex;
+	flex-flow: row wrap;
+	align-items: center;
+	justify-content: center;
+}
+
 @media (max-width: 600px) {
 	.grid {
 		width: 100%;

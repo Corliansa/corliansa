@@ -3,6 +3,7 @@ import Head from "next/head";
 import styles from "../styles/Home.module.css";
 import Card from "../components/RepoCard";
 import TechCard from "../components/TechCard";
+import { Linkedin, GitHub, Mail } from "react-feather";
 
 type Repo = {
 	name: string;
@@ -10,7 +11,7 @@ type Repo = {
 	fork: boolean;
 	language: string;
 	license: { spdx_id: string };
-	updated_at: string;
+	pushed_at: string;
 };
 
 type HomeProps = {
@@ -41,21 +42,30 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 				<p className={styles.description}>
 					Student at TU Berlin | Full Stack Developer
 				</p>
-			</main>
-			<hr />
-			<main className={styles.main}>
-				<h1 className={styles.title}>Repos</h1>
 
-				<div className={styles.repos}>
-					{data?.map((repo: Repo) => (
-						<Card key={repo.name} data={repo} />
-					))}
+				<div>
+					<a
+						href="https://www.linkedin.com/in/corliansa/"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<Linkedin />
+					</a>{" "}
+					<a
+						href="https://github.com/Corliansa"
+						target="_blank"
+						rel="noopener noreferrer"
+					>
+						<GitHub />
+					</a>{" "}
+					<a href="mailto:corliansa@icloud.com">
+						<Mail />
+					</a>
 				</div>
 			</main>
 			<hr />
 			<main className={styles.main}>
 				<h1 className={styles.title}>Tech Stack</h1>
-
 				<div className={styles.stacks}>
 					{[
 						{ name: "React Native" },
@@ -88,6 +98,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 							description:
 								"React Native | Typescript | Serverless\
 							- A mobile app to track your BSC cryptocurrencies investment.",
+							url: "https://expo.dev/@corliansa/SikeTracker",
 						},
 						{
 							name: "Simplifinance",
@@ -105,6 +116,16 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 						},
 					].map((tech: Tech) => (
 						<TechCard key={tech.name} data={tech} />
+					))}
+				</div>
+			</main>
+			<hr />
+			<main className={styles.main}>
+				<h1 className={styles.title}>Repos</h1>
+
+				<div className={styles.repos}>
+					{data?.map((repo: Repo) => (
+						<Card key={repo.name} data={repo} />
 					))}
 				</div>
 			</main>

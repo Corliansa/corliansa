@@ -6,7 +6,7 @@ type Repo = {
 	description: string;
 	language: string;
 	license: { spdx_id: string };
-	updated_at: string;
+	pushed_at: string;
 };
 
 type CardProps = {
@@ -27,21 +27,21 @@ const RepoCard: React.FC<CardProps> = ({ data }) => {
 				{data.language && (
 					<span>
 						{" "}
-						<GoPrimitiveDot size={12} /> {data.language},{" "}
+						<GoPrimitiveDot size={12} /> {data.language}{" "}
 					</span>
 				)}
 				{data.license?.spdx_id && (
 					<span>
 						{" "}
-						<GoLaw size={12} /> {data.license?.spdx_id} License,{" "}
+						<GoLaw size={12} /> {data.license?.spdx_id} License{" "}
 					</span>
 				)}
-				<span>
+				{/* <span>
 					Updated on{" "}
-					{new Date(data.updated_at).toLocaleDateString("en-UK", {
+					{new Date(data.pushed_at).toLocaleDateString("en-UK", {
 						dateStyle: "medium",
 					})}
-				</span>
+				</span> */}
 			</div>
 		</div>
 	);

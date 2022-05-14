@@ -149,7 +149,7 @@ const Privacy: NextPage = () => {
 				</p>
 				<p>
 					If you have any questions or suggestions about my Privacy Policy, do
-					not hesitate to contact me at corliansa@gmail.com.
+					not hesitate to contact me at corliansa+website@icloud.com.
 				</p>
 			</main>
 		</div>
