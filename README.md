@@ -2,7 +2,9 @@
 
 # About Me
 
-I am a 20 y.o. student a TU Berlin, I am a responsible, enthusiastic and hardworking IT person. Programming is my passion and my field of study.
+I am a student at Technische Universität Berlin, and currently working as a Software Developer at Green Got. Please visit my personal website to see my current portfolio, or you can also check my repositories to see what i've been working on.
+
+So far, programming has been a joy for me and i wish to continue to learn about it even more.
 
 <!--
 **Corliansa/corliansa** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
