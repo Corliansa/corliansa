@@ -19,7 +19,7 @@ const Privacy: NextPage = () => {
 
 				<p>
 					Your privacy is important to us. It is Corliansa Kusumah |
-					Portofolio&#39;s policy to respect your privacy and comply with any
+					Portfolio&#39;s policy to respect your privacy and comply with any
 					applicable law and regulation regarding any personal information we
 					may collect about you, including across our website,{" "}
 					<a href="https://corliansa.xyz">https://corliansa.xyz</a>, and other

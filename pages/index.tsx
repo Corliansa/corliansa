@@ -29,10 +29,10 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 	return (
 		<div className={styles.container}>
 			<Head>
-				<title>Corliansa Kusumah | Portofolio</title>
+				<title>Corliansa Kusumah | Portfolio</title>
 				<meta
 					name="description"
-					content="Corliansa Kusumah's Portofolio Website"
+					content="Corliansa Kusumah's Portfolio Website"
 				/>
 				<link rel="icon" href="/favicon.ico" />
 			</Head>
