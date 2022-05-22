@@ -40,7 +40,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 				<h1 className={styles.title}>Corliansa Kusumah</h1>
 
 				<p className={styles.description}>
-					Student at TU Berlin | Full Stack Developer
+					Student at TU Berlin | Software Engineer
 				</p>
 
 				<div>
