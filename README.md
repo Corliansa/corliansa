@@ -2,7 +2,7 @@
 
 # About Me
 
-I am a student at Technische Universität Berlin, and currently working as a Software Developer at Green Got. Please visit my personal website to see my current portfolio, or you can also check my repositories to see what i've been working on.
+I am a student at Technische Universität Berlin, and currently working as a Software Engineer at Green Got. Please visit my personal website to see my current portfolio, or you can also check my repositories to see what i've been working on.
 
 So far, programming has been a joy for me and i wish to continue to learn about it even more.
 
