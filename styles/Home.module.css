@@ -7,6 +7,7 @@
 		rgba(2, 0, 36, 1) 90%
 	);
 	color: #eeeeee;
+	scroll-snap-type: y mandatory;
 }
 
 .main {
@@ -17,6 +18,8 @@
 	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	scroll-snap-align: start;
+	scroll-snap-stop: always;
 }
 
 .title a {
