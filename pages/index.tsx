@@ -4,25 +4,11 @@ import styles from "../styles/Home.module.css";
 import Card from "../components/RepoCard";
 import TechCard from "../components/TechCard";
 import { Linkedin, GitHub, Mail } from "react-feather";
-
-type Repo = {
-	name: string;
-	description: string;
-	fork: boolean;
-	language: string;
-	license: { spdx_id: string };
-	pushed_at: string;
-};
+import type { Repo } from "../components/RepoCard";
+import type { Tech } from "../components/TechCard";
 
 type HomeProps = {
 	data: Repo[];
-};
-
-type Tech = {
-	name: string;
-	description?: string;
-	image?: string;
-	url?: string;
 };
 
 const Home: NextPage<HomeProps> = ({ data }) => {
@@ -40,7 +26,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 				<h1 className={styles.title}>Corliansa Kusumah</h1>
 
 				<p className={styles.description}>
-					Student at TU Berlin | Software Engineer
+					Student @ TU Berlin <br /> Software Engineer @ Green-Got
 				</p>
 
 				<div>
@@ -68,10 +54,14 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 				<h1 className={styles.title}>Tech Stack</h1>
 				<div className={styles.stacks}>
 					{[
-						{ name: "React Native" },
 						{ name: "React" },
+						{ name: "React Native" },
 						{ name: "Next.js" },
 						{ name: "TypeScript" },
+						{ name: "tRPC" },
+						{ name: "React Query" },
+						{ name: "Prisma" },
+						{ name: "Zustand" },
 						{ name: "Node.js" },
 						{ name: "Express" },
 						{ name: "MongoDB" },
@@ -105,7 +95,7 @@ const Home: NextPage<HomeProps> = ({ data }) => {
 							description:
 								"React Native | Typescript\
 						- A simple mobile budget tracker app.",
-							url: "https://apps.apple.com/in/app/simplifinance/id1612985627",
+							url: "https://play.google.com/store/apps/details?id=xyz.corliansa.simplifinance&hl=en_US&gl=US",
 						},
 						{
 							name: "Simplinotes",

@@ -1,7 +1,7 @@
 import styles from "../styles/RepoCard.module.css";
 import { GoLaw, GoPrimitiveDot } from "react-icons/go";
 
-type Repo = {
+export type Repo = {
 	name: string;
 	description: string;
 	language: string;

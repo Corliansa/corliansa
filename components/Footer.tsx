@@ -7,9 +7,9 @@ const Card: React.FC = () => {
 			<Link href="/">
 				{`Copyright © ${new Date().getFullYear()} Corliansa Kusumah`}
 			</Link>
-			<Link href="/impressum">
+			{/* <Link href="/impressum">
 				<a className={styles.link}>Impressum</a>
-			</Link>
+			</Link> */}
 			<Link href="/privacy">Privacy Policy</Link>
 		</footer>
 	);

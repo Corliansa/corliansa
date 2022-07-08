@@ -1,11 +1,11 @@
 .container {
 	padding: 0 2rem;
 	background-color: #222831;
-	background-image: radial-gradient(
+	/* background-image: radial-gradient(
 		circle farthest-corner at 83.7% 4.3%,
 		rgba(0, 173, 181, 1) 0%,
 		rgba(2, 0, 36, 1) 90%
-	);
+	); */
 	color: #eeeeee;
 	scroll-snap-type: y mandatory;
 }
@@ -126,4 +126,12 @@
 		font-size: 4.5rem;
 		font-weight: 300;
 	}
+}
+
+.stacks {
+	display: flex;
+	max-width: 80%;
+	flex-wrap: wrap;
+	justify-content: center;
+	align-items: center;
 }

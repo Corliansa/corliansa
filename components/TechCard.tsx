@@ -1,6 +1,6 @@
 import styles from "../styles/TechCard.module.css";
 
-type Tech = {
+export type Tech = {
 	name: string;
 	description?: string;
 	image?: string;
